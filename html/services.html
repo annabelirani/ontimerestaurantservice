@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>On Time Restaurant Service</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <a href="/html/index.html">
+            <img class="logo" src="/logos/logo2.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/html/aboutus.html">ABOUT US</a></li>
+                <li><a href="/html/services.html">SERVICES</a></li>
+                <li><a href="/html/index.html#location">LOCATIONS</a></li>
+                <li><a href="/html/index.html#process">OUR PROCESS</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+    
+
+    <h1 class="servicesTitle">RENOVATION AND MAINTENANCE</h1>
+    <div class="accordian">
+       
+        <ul id="accordianOption">
+            <li>
+                <label for="door">Doors and Windows <span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="door" checked>
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+            <li>
+                <label for="flooring">Flooring<span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="flooring" >
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+            <li>
+                <label for="plumbing">Minor Plumbing and Drains<span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="plumbing" >
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+            <li>
+                <label for="upholstery">Upholstery<span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="upholstery" >
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+            <li>
+                <label for="table">Table and Chairs<span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="table" >
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+            <li>
+                <label for="resurfacing">Resurfacing<span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="resurfacing" >
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+            <li>
+                <label for="drywall">Drywall and Paint<span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="drywall" >
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+            <li>
+                <label for="caulking">Caulking<span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="caulking" >
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+            <li>
+                <label for="fridge">Equipment Replacement<span>&#x3e;</span></label>
+                <input type="radio" name="accordianthing" id="fridge" >
+                <div class="content">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit exercitationem deserunt porro. Iure repellat perspiciatis neque commodi, asperiores vel error tenetur vitae nesciunt, itaque beatae consequuntur velit illo assumenda omnis?</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const locationLink = document.querySelector('a[href="#location"]');
+            locationLink.addEventListener('click', scrollToSection);
+
+            const processLink = document.querySelector('a[href="#process"]');
+            processLink.addEventListener('click', scrollToSection);
+
+            function scrollToSection(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement){
+                    targetElement.scrollIntoView({behaviou:'smooth'});
+                }
+            }
+        });
+    </script>
+</body>    
