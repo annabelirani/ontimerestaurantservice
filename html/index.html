@@ -28,6 +28,7 @@
         <a class="cta" href="#contactInfoForm"><button>Contact</button></a>
     </header>
     
+<div class="introText">HELLO</div>
 
 <div class="kitchenImage">
     <div class="dark-overlay"></div>
@@ -238,52 +239,18 @@
 </body>
 </html>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-     
-	<style type="text/css">
-	body { font-family: sans-serif; }
-	.scene {
-  		width: 200px;
-  		height: 260px;
-  		perspective: 600px;
-	}
-	
-	.card {
-  		width: 100%;
-  		height: 100%;
-  		position: relative;
-  		transition: transform 1s;
-  		transform-style: preserve-3d;
-	}
-	
-	.card__face {
-  		position: absolute;
-  		height: 100%;
-  		width: 100%;
-  		backface-visibility: hidden;
-	}
-	
-	.card__face--front {
-  		background: red;
-	}
 
-	.card__face--back {
-  		background: blue;
-  		transform: rotateY( 180deg );
-	}
-	
-	.card.is-flipped {
-  		transform: rotateY(180deg);
-	}
-	</style>
-  </head>
+<html lang="en">
+  
   <body>
 	<div class="scene">
   		<div class="card">
-    		<div class="card__face card__face--front">FRONT</div>
-    		<div class="card__face card__face--back">BACK</div>
+    		<div class="card__face card__face--front"></div>
+            <div class="card__face card__face--back">
+                
+                <div class="darker-overlay"></div>
+                <div class="backcontent">BACK</div>
+            </div>
   		</div>
 	</div>
     <script>
