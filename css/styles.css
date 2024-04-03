@@ -484,7 +484,7 @@ section .container2 .contactForm .formBox, .inputBox input {
     outline: none;
 }
 
-section .container2 .contactForm .formBox .inputBox input[type="submit"] {
+section .container2 .contactForm .formBox .inputBox button {
     position: relative;
     height: 36px;
     cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
@@ -500,6 +500,7 @@ section .container2 .contactForm .formBox .inputBox input[type="submit"] {
     display: block; /* Makes the button a block element to utilize width properly */
     margin: 0 auto; /* Centers the button horizontally in its container */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    
 }
 
 section .container2 .contactForm .formBox .inputBox input[type="submit"]:hover {
@@ -773,5 +774,123 @@ body { font-family: sans-serif; }
         width : 75%;
     }
 
-   
-      
+.image-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    float: right;
+    position: relative;
+    background-color:black;
+    height: 800px;
+    padding: 40px;
+    
+    
+}
+
+.image-container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+
+}
+
+.image-grid {
+    display: grid;
+    float: right;
+    grid-template-columns: repeat(2,250px);
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 70px;
+    width: auto;
+    padding: 20px;
+    
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    
+    
+}
+.text {
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    align-self: right;
+    padding-top: 300px;
+    padding-left: 50px;
+    padding-right: 0px;
+    color: white;
+    text-shadow: #ffffff;
+}
+
+.what-we-do-text {
+    font-size: 23px;
+    padding-bottom: 3000px;
+    
+}
+
+
+.image-container-left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    float: right;
+    position: relative;
+    background-color:white;
+    height: 800px;
+    padding: 40px;
+    
+    
+}
+
+
+
+.image-grid-left {
+    display: grid;
+    float: right;
+    grid-template-columns: repeat(2,250px);
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 70px;
+    width: auto;
+    padding: 20px;
+    
+}
+
+.image-grid-left img {
+    width: 100%;
+    height: auto;
+    
+    
+}
+.text-left {
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    align-self: right;
+    padding-top: 300px;
+    padding-left: 50px;
+    padding-right: 0px;
+    color: black;
+    text-shadow: #ffffff;
+}
+
+.what-we-do-text-left {
+    font-size: 23px;
+    padding-bottom: 3000px;
+    
+}
+
+
