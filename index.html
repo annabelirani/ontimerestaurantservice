@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+
 <html>
+    
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +11,20 @@
 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        
+        <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
         
-        <img class="logo" src="logo2.png" alt="logo">
+        <img class="logo" src="/logos/logo2.png" alt="logo">
         <nav>
             <ul class="nav_links">
-                <li><a href="aboutus.html">ABOUT US</a></li>
-                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="/html/services.html">SERVICES</a></li>
                 <li><a href="#location">LOCATIONS</a></li>
                 <li><a href="#process">OUR PROCESS</a></li>
             </ul>
@@ -28,34 +32,77 @@
         <a class="cta" href="#contactInfoForm"><button>Contact</button></a>
     </header>
     
+<div class="intro">
+    <h1>for all your handy work needs</h1>
+    <p>you call, we deliver. fast, reliable, and kind service.</p>
+</div>
 
 <div class="kitchenImage">
     <div class="dark-overlay"></div>
-    <a href="workpics.html" class="view-more-button">View Our Work</a>
+    <a href="/html/workpics.html" class="view-more-button">View Our Work</a>
 
 </div>
 
 <div class="header-1">
-    <h2>Renovation and Maintenance</h2>
+    <h2>Handy Work and Maintenance</h2>
 </div>
 
 <div class="container">
     <div class="box">
-        <img class="photoGrid" src="restaurant1.jpeg">
+        <img class="photoGrid" src="/pictures/IMG_3275.jpg">
     </div>
     <div class="box">
-        <img class="photoGrid" src="restuarant2.webp">
+        <img class="photoGrid" src="/pictures/counter.jpg">
     </div>
     <div class="box">
-        <img class="photoGrid" src="restaurant3.jpeg">
+        <img class="photoGrid" src="/pictures/plumbing.jpg">
     </div>
     
 </div>
 
-<div class="what-we-do" id="process">
-    <h2 class="header-2">WHAT WE DO AND WHY WE DO IT</h2>
-    <p class="writing">At On Time Restaurant Service, we specialize in comprehensive handyman solutions tailored specifically for the reaturant industry. Our expert team is equipped to handle a wide range of services designed to keep your establishment running smoothly and looking it's best. We offer all services from door and window, flooring, minor plumbing and drainage, upholstery services, caulking, equippment maintenance, and drywall and painting repairs. Having over 30 years of experience in the industry, when asking yourself who is the most trusted, theres no other answer than On Time Restuarant Service.</p>
+<div class="image-container-header" id="process">
+    <h2>What We Do</h2>
 </div>
+<div class="image-container">
+
+    <div class="image-grid">
+        <img src="/pictures/drywall.jpeg">
+        <img src="/pictures/plumbing2.jpg">
+        <img src="/pictures/restaurant-bathroom.jpg">
+        <img src="/pictures/faucet.jpg">
+        
+    </div>
+    <div class="text">
+        <p class="what-we-do-text">
+            We bring precision and efficiency to every repair service we provide for your restaurant.
+            We are equipped with the latest tools to handle everything from kitchen appliances to mild plumbing to drywall and paint. Trust us to keep your restaurant in perfect operational condition and no fret when it comes to emergencies.
+
+        </p>
+    </div>
+    
+</div>
+
+
+
+<div class="image-container-left">
+
+    <div class="text-left">
+        <p class="what-we-do-text-left">
+            Flooring, doors and paint or panel problems? We got you covered! We also have vast experience in seasonal maintenance for patios and outdoor properties. Let us put away your beautiful furniture so we can prepare it for your busiest patio season. 
+        </p>
+    </div>
+    
+    <div class="image-grid-left">
+        <img src="/pictures/floor.jpg">
+        <img src="/pictures/door.jpg">
+        <img src="/pictures/wall.jpg">
+        <img src="/pictures/wrapping.jpg">
+        
+    </div>
+   
+</div>
+
+
 
 <div class="map" id="location">
     <h1>LOCATION</h1>
@@ -65,156 +112,92 @@
     <div class="container2">
         <div class="contactinfo">
             <div>
+                
                 <h2>Contact Info</h2>
                 <ul class="info">
                     <li>
-                        <span><img src="location.jpeg"></span>
-                        <span>1234 Wonderland Road <br>
-                        London, ON<br>
-                        A1B2C3</span>
+                        <span><img src="/logos/location2.png"></span>
+                        <span>London and Surrounding Areas</span>
                     </li>
                     <li>
-                        <span><img src="mail.webp"></span>
-                        <span>lorem@ipsum.com</span>
+                        <span><img src="/logos/maillogo.png"></span>
+                        <span>ontimerestaurantservices@gmail.com</span>
                     </li>
                     <li>
-                        <spam><img src="phone.jpeg"></spam>
-                        <span>519-471-7531</span>
+                        <spam><img src="/logos/calllogo.png"></spam>
+                        <span>(226) 224-5185</span>
                     </li>
                 </ul>
+                
             </div>
         </div>
         
         <div class="contactForm" id ="contactInfoForm">
-            
+            <form action="https://formsubmit.co/ae3c5a37484514f59f7c8d2100c23bf7" method="POST">
             <h2 class="headerButBlack">Send A Message</h2>
             <div class="formBox">
                 <div class="inputBox w50">
-                    <input type="text" name="" required>
-                    <span>First Name</span>
+                    <input type="text" id="firstname" name="name" required>
+                    <span>Name</span>
                 </div>
+                
                 <div class="inputBox w50">
-                    <input type="text" name="" required>
-                    <span>Last Name</span>
-                </div>
-                <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="email" id="email" name="email" required>
                     <span>Email Address</span>
                 </div>
                 <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" id= "phone" name="phone" required>
                     <span>Mobile Number</span>
                 </div>
                 <div class="inputBox w100">
-                    <textarea name="" required placeholder="Write your message here..."></textarea>
+                    <textarea id="message" rows= "2" name="message" required placeholder="Write your message here..."></textarea>
                 </div>
                 <div class="inputBox w100">
-                    <input type="submit" value="Send">
+                    <button type="submit" value="Send">SEND</button>
                     
                 </div>
             </div>
+            </form>
+            
         </div>
     </div>
 </section>
-<section class="reviewSection">
-    <div class="container3">
-        <div class="section-header">
-            <h2 class="title">What Our Clients Say</h2>
-        </div>
-        <div class="testimonials-content">
-            <div class="swiper testimonials-slider js-testimonials-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide testimonials-item">
-                        <div class="info">
-                            <img src="img/1.png" alt="">
-                            <div class="text-box">
-                                <h3 class="name">John Doe</h3>
-                                <span class="job">web developer</span>
-                            </div>
-                        </div>
-                        <p>akjdfandf afvav dfvikahfvihknfvasd oaivvadsfva oahfva</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="swiper-slide testimonials-item">
-                        <div class="info">
-                            <img src="img/2.png" alt="">
-                            <div class="text-box">
-                                <h3 class="name">John Doe</h3>
-                                <span class="job">web developer</span>
-                            </div>
-                        </div>
-                        <p>akjdfandf afvav dfvikahfvihknfvasd oaivvadsfva oahfva</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="swiper-slide testimonials-item">
-                        <div class="info">
-                            <img src="img/1.png" alt="">
-                            <div class="text-box">
-                                <h3 class="name">John Doe</h3>
-                                <span class="job">web developer</span>
-                            </div>
-                        </div>
-                        <p>akjdfandf afvav dfvikahfvihknfvasd oaivvadsfva oahfva</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        
-                    </div>
-                    <div class="swiper-slide testimonials-item">
-                        <div class="info">
-                            <img src="img/1.png" alt="">
-                            <div class="text-box">
-                                <h3 class="name">John Doe</h3>
-                                <span class="job">web developer</span>
-                            </div>
-                        </div>
-                        <p>akjdfandf afvav dfvikahfvihknfvasd oaivvadsfva oahfva</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                </div>
-                <div class="swiper-slide testimonials-item">
-                    <div class="info">
-                        <img src="img/1.png" alt="">
-                        <div class="text-box">
-                            <h3 class="name">John Doe</h3>
-                            <span class="job">web developer</span>
-                        </div>
-                    </div>
-                    <p>akjdfandf afvav dfvikahfvihknfvasd oaivvadsfva oahfva</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-            </div>
-            </div>
-            <div class="swiper-pagination js-testimonials-pagination"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section>
+    <div class="client-wrap">
+        <h1>Our Past and Present Clients</h1>
+        <hr />
+        <div class="client-in">
+            <ul>
+                <li>
+                    <img src="/logos/balzac.png" >
+                </li>
+                <li>
+                    <img src="/logos/burgerking.jpg" >
+                </li>
+                <li>
+                    <img src="/logos/earls.png" >
+                </li>
+                <li>
+                    <img src="/logos/milestones2.png" >
+                </li>
+                <li>
+                    <img src="/logos/kfc2.webp" >
+                </li>
+            </ul>
         </div>
     </div>
 </section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
@@ -237,3 +220,6 @@
 </script>
 </body>
 </html>
+
+
+
