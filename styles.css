@@ -82,7 +82,7 @@ button:hover {
     position: relative;
     width: 100%;
     min-height: 56.25vw;
-    background-image: url('/pictures/tools.jpeg');
+    background-image: url('tools.jpeg');
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
@@ -715,7 +715,7 @@ body { font-family: sans-serif; }
 	
 	.card__face--front {
   		background: red;
-        background-image: url('/pictures/bathroom.jpg');
+        background-image: url('bathroom.jpg');
         background-size: contain;
         background-position: center;
         display: flex;
@@ -727,7 +727,7 @@ body { font-family: sans-serif; }
 
 	.card__face--back {
   		background: white;
-        background-image: url('/pictures/restaurant1.jpeg');
+        background-image: url('restaurant1.jpeg');
         background-size: contain;
         color: white;
         border-radius: 15px;
@@ -753,7 +753,7 @@ body { font-family: sans-serif; }
     }
     @font-face {
         font-family: 'comeback';
-        src: url('/fonts/tough2.otf');
+        src: url('tough2.otf');
     }
     .intro {
         width: 100%;
@@ -830,7 +830,7 @@ body { font-family: sans-serif; }
 }
 @font-face {
     font-family: 'mont';
-    src: url('/fonts/montserrat.ttf');
+    src: url('montserrat.ttf');
 }
 .text {
     text-align: center;
