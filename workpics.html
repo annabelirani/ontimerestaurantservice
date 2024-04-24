@@ -8,15 +8,18 @@
 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <body>
+
+
+
     <header>
-        <a href="home.html">
-            <img class="logo" src="logo2.png" alt="logo">
+        <a href="/html/index.html">
+            <img class="logo" src="/logos/logo2.png" alt="logo">
         </a>
             
         <nav>
@@ -25,41 +28,82 @@
                 
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Contact</button></a>
+        <a class="cta" href="/html/index.html#contactInfoForm"><button>Contact</button></a>
     </header>
     <div class="header-1">
         <h2>Browse All Our Work</h2>
     </div>
-    <div class="imagecontainer">
-        <div class="box">
-            <img src="restaurant1.jpeg">
+
+
+
+    <div class="cards-container">
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front" style="background-image: url('/pictures/IMG_3276.jpg');"></div>
+                <div class="card__face card__face--back" style="background-image:  url('/pictures/IMG_3276.jpg');">
+                    <div class="darker-overlay"></div>
+                    <div class="backcontent">BACK 1</div>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            <img src="restuarant2.webp">
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front" style="background-image: url('/pictures/counter.jpg');"></div>
+                <div class="card__face card__face--back" style="background-image: url('/pictures/counter.jpg');">
+                    <div class="darker-overlay"></div>
+                    <div class="backcontent">BACK 2</div>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            <img src="restaurant3.jpeg">
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front" style="background-image: url('/pictures/drywall.jpeg');"></div>
+                <div class="card__face card__face--back" style="background-image: url('/pictures/drywall.jpeg');">
+                    <div class="darker-overlay"></div>
+                    <div class="backcontent">BACK 2</div>
+                </div>
+            </div>
         </div>
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front" style="background-image: url('/pictures/IMG_3277.jpg');"></div>
+                <div class="card__face card__face--back" style="background-image: url('/pictures/IMG_3277.jpg');">
+                    <div class="darker-overlay"></div>
+                    <div class="backcontent">BACK 2</div>
+                </div>
+            </div>
+        </div>
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front" style="background-image: url('/pictures/IMG_3275.jpg');"></div>
+                <div class="card__face card__face--back" style="background-image: url('/pictures/IMG_3275.jpg');">
+                    <div class="darker-overlay"></div>
+                    <div class="backcontent">BACK 2</div>
+                </div>
+            </div>
+        </div>
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front" style="background-image: url('/pictures/faucet.jpg');"></div>
+                <div class="card__face card__face--back" style="background-image: url('/pictures/faucet.jpg');">
+                    <div class="darker-overlay"></div>
+                    <div class="backcontent">BACK 2</div>
+                </div>
+            </div>
+        </div>
+
+   
     </div>
-    <div class="imagecontainer">
-        <div class="box">
-            <img src="restaurant1.jpeg">
-        </div>
-        <div class="box">
-            <img src="restuarant2.webp">
-        </div>
-        <div class="box">
-            <img src="restaurant3.jpeg">
-        </div>
-    </div>
-    <div class="imagecontainer">
-        <div class="box">
-            <img src="restaurant1.jpeg">
-        </div>
-        <div class="box">
-            <img src="restuarant2.webp">
-        </div>
-        <div class="box">
-            <img src="restaurant3.jpeg">
-        </div>
-    </div>
+    
+        
+        
+
+
+<script>
+    var cards = document.querySelectorAll('.card');
+    cards.forEach(function(card) {
+        card.addEventListener('click', function() {
+            card.classList.toggle('is-flipped');
+        });
+    });
+</script>
